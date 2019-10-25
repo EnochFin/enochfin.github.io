@@ -1,6 +1,6 @@
 ## Welcome to GitHub Pages
 
-[Game](host.enochsworkshop.com/game)
+[Game](game)
 
 You can use the [editor on GitHub](https://github.com/EnochFin/enochfin.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
