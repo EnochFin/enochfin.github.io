@@ -4,11 +4,11 @@
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
-import HelloWorld from './components/MainPage.vue';
+import MainPage from './components/MainPage.vue';
 
 @Options({
   components: {
-    HelloWorld,
+    MainPage,
   },
 })
 export default class App extends Vue {}
