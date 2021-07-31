@@ -1,3 +1,13 @@
 <head>
-    <p>eskeetit</p>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <div id="app">
+        {{ title }}
+    </div>
 </head>
+
+var app = new Vue({
+    el: '#app',
+    data: {
+        title: 'Enoch\'s Workshop'
+    }
+});
