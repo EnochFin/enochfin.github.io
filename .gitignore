@@ -17,3 +17,15 @@ packages/vue-server-renderer/server-plugin.js
 packages/vue-server-renderer/client-plugin.js
 packages/vue-template-compiler/build.js
 .vscode
+
+# local env files
+.env.local
+.env.*.local
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

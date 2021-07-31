@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "vue": "^2.6.14",
+    "webpack": "^5.47.1"
+  },
+  "name": "enochfin.github.io",
+  "description": "[Game](game)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnochFin/enochfin.github.io.git"
+  },
+  "keywords": [
+    "github.io"
+  ],
+  "author": "Enoch Finley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EnochFin/enochfin.github.io/issues"
+  },
+  "homepage": "https://github.com/EnochFin/enochfin.github.io#readme"
+}
