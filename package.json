@@ -1,15 +1,19 @@
 {
   "dependencies": {
+    "lodash": "^4.17.21",
     "vue": "^2.6.14",
     "webpack": "^5.47.1"
   },
   "name": "enochfin.github.io",
   "description": "[Game](game)",
   "version": "1.0.0",
-  "main": "index.js",
-  "devDependencies": {},
+  "private": true,
+  "devDependencies": {
+    "webpack-cli": "^4.7.2"
+  },
   "scripts": {
-    "test": "test"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
