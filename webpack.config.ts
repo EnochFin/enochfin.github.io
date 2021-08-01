@@ -1,5 +1,4 @@
 import path = require('path');
-
 import ESLintPlugin from 'eslint-webpack-plugin';
 
 const options = {
