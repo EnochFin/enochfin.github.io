@@ -28,7 +28,8 @@ import WelcomeItem from '../components/WelcomeItem.vue'
   .welcome {
     min-height: 100vh;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 }
 

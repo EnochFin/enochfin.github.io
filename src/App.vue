@@ -107,13 +107,9 @@ nav a:first-of-type {
     margin-top: 1rem;
   }
 
-  soc {
+  #socials {
     text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
+    font-size: 24px;
   }
 }
 </style>
