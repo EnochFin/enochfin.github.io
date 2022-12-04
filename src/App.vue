@@ -12,7 +12,7 @@ import Hello from './components/Hello.vue'
       <Hello msg="Welcome to Enoch's Workshop" />
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/">Projects</RouterLink>
         <RouterLink to="/art">Art</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
