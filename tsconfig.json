@@ -11,5 +11,7 @@
       "path": "./tsconfig.vitest.json"
     }
   ],
-  "baseUrl": "src"
+  "compilerOptions": {
+    "baseUrl": "src"
+  },
 }

@@ -6,7 +6,7 @@ import Hello from './components/Hello.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" height="150" />
+    <img alt="Enoch logo" class="logo" src="@/assets/logo.svg" height="150" />
 
     <div class="wrapper">
       <Hello msg="Welcome to Enoch's Workshop" />
