@@ -1,6 +1,15 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <ul>
+      <li>
+        <p>I am a Fullstack Software Developer with over 5 years of experience of effectively collaborating with teams
+          to complete hard projects in fields ranging from mobile-first healthcare apps to million+ user Banking Sites
+          to ML-powered calculators.</p>
+      </li>
+      <li>
+        <p>Feel free to contact me via my socials located under the navigation.</p>
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -11,5 +20,11 @@
     display: flex;
     align-items: center;
   }
+}
+
+.about li {
+  padding-top: 16px;
+
+  list-style-type: none;
 }
 </style>

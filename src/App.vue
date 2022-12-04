@@ -1,19 +1,28 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import Hello from './components/Hello.vue'
+
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" height="150" />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <Hello msg="Welcome to Enoch's Workshop" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/art">Art</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
+
+      <div id="socials">
+        <a><font-awesome-icon icon="fa-brands fa-linkedin" /></a>
+        <a><font-awesome-icon icon="fa-brands fa-github" /></a>
+        <a><font-awesome-icon icon="fa-solid fa-envelope" /></a>
+      </div>
+
     </div>
   </header>
 
@@ -35,7 +44,22 @@ nav {
   width: 100%;
   font-size: 12px;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+}
+
+#socials {
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+}
+
+#socials a {
+  display: inline-block;
+  padding: 0 .3rem;
+}
+
+#socials a:first-of-type {
+  border: 0;
 }
 
 nav a.router-link-exact-active {
@@ -74,6 +98,15 @@ nav a:first-of-type {
   }
 
   nav {
+    text-align: left;
+    margin-left: -1rem;
+    font-size: 1rem;
+
+    padding: 1rem 0;
+    margin-top: 1rem;
+  }
+
+  soc {
     text-align: left;
     margin-left: -1rem;
     font-size: 1rem;

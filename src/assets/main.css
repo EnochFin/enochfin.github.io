@@ -1,5 +1,10 @@
 @import './base.css';
 
+html {
+  /* thanks to https://codepen.io/elstgav/details/myEJNv */
+  margin-left: calc(100vw - 100%);
+}
+
 #app {
   max-width: 1280px;
   margin: 0 auto;
@@ -8,16 +13,19 @@
   font-weight: normal;
 }
 
-a,
-.green {
+a {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  color: rgb(189, 76, 0);
   transition: 0.4s;
+}
+
+h1 {
+  color: rgb(189, 76, 0);
 }
 
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+    background-color: hsla(14, 100%, 37%, 0.2);
   }
 }
 
