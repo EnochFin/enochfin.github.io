@@ -8,7 +8,8 @@ defineProps<{
   <div class="greetings">
     <h1>{{ msg }}</h1>
     <h3>
-      You can find the source of this site <a href="https://github.com/EnochFin/enochfin.github.io" target="_blank" rel="noopener">Here</a>
+      You can find the source <a href="https://github.com/EnochFin/enochfin.github.io" target="_blank"
+        rel="noopener">Here</a>
     </h3>
   </div>
 </template>
@@ -30,6 +31,7 @@ h3 {
 }
 
 @media (min-width: 1024px) {
+
   .greetings h1,
   .greetings h3 {
     text-align: left;

@@ -7,9 +7,17 @@ import EcosystemIcon from './icons/IconEcosystem.vue'
   <div class="welcome">
     <WelcomeItem>
       <template #icon>
-        <EcosystemIcon />
+        <font-awesome-icon icon="fa-solid fa-cube" />
       </template>
-      <template #heading>:)</template>
+      <template #heading><a href="https://github.com/EnochFin/enochfin.github.io">enochfin.github.io</a></template>
+      This is a github pages project that is designed to showcase my web-based projects and art.
+    </WelcomeItem>
+    <WelcomeItem>
+      <template #icon>
+        <font-awesome-icon icon="fa-solid fa-train" />
+      </template>
+      <template #heading><a href="/codingtrain">Coding Train</a></template>
+      This is a collection of Coding Train challenges that I've worked through.
     </WelcomeItem>
   </div>
 </template>
