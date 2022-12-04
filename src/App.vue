@@ -18,9 +18,9 @@ import Hello from './components/Hello.vue'
       </nav>
 
       <div id="socials">
-        <a><font-awesome-icon icon="fa-brands fa-linkedin" /></a>
-        <a><font-awesome-icon icon="fa-brands fa-github" /></a>
-        <a><font-awesome-icon icon="fa-solid fa-envelope" /></a>
+        <a href="https://www.linkedin.com/in/enochfinley/"><font-awesome-icon icon="fa-brands fa-linkedin" /></a>
+        <a href="https://github.com/EnochFin/enochfin.github.io"><font-awesome-icon icon="fa-brands fa-github" /></a>
+        <a href="mailto:enochfinley@gmail.com"><font-awesome-icon icon="fa-solid fa-envelope" /></a>
       </div>
 
     </div>
