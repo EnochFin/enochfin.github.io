@@ -21,7 +21,7 @@ import Hello from './components/Hello.vue'
         <a href="https://www.linkedin.com/in/enochfinley/"><font-awesome-icon icon="fa-brands fa-linkedin" /></a>
         <a href="https://github.com/EnochFin/enochfin.github.io"><font-awesome-icon icon="fa-brands fa-github" /></a>
         <a href="https://www.instagram.com/enoch.finley/"><font-awesome-icon icon="fa-brands fa-instagram" /></a>
-        <a href="https://discord.gg/6eThFGXnm2"><font-awesome-icon icon="fa-brands fa-discord" /></a>
+        <a href="https://discord.gg/xh4vKphXfK"><font-awesome-icon icon="fa-brands fa-discord" /></a>
         <a href="mailto:enochfinley@gmail.com"><font-awesome-icon icon="fa-solid fa-envelope" /></a>
       </div>
 
