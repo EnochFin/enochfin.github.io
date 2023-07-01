@@ -22,6 +22,7 @@ library.add(faDiscord);
 library.add(faEnvelope);
 library.add(faTrain);
 library.add(faCube);
+library.add(faInstagram);
 
 const app = createApp(App).component("font-awesome-icon", FontAwesomeIcon);
 
