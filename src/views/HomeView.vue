@@ -20,6 +20,15 @@ import WelcomeItem from '../components/WelcomeItem.vue'
       </template>
       This is a collection of Coding Train challenges that I've worked through.
     </WelcomeItem>
+    <WelcomeItem>
+      <template #icon>
+        <font-awesome-icon icon="fa-solid fa-camera" />
+      </template>
+      <template #heading>
+        <RouterLink to="/art">Art</RouterLink>
+      </template>
+      This is a collection of Coding Train challenges that I've worked through.
+    </WelcomeItem>
   </div>
 </template>
 

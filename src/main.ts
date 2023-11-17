@@ -10,7 +10,12 @@ import {
   faDiscord,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faTrain, faCube } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faTrain,
+  faCube,
+  faCamera,
+} from "@fortawesome/free-solid-svg-icons";
 
 import App from "./App.vue";
 import router from "./router";
@@ -22,6 +27,7 @@ library.add(faGithub);
 library.add(faDiscord);
 library.add(faEnvelope);
 library.add(faTrain);
+library.add(faCamera);
 library.add(faCube);
 library.add(faInstagram);
 

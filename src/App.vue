@@ -6,8 +6,9 @@ import Hello from './components/Hello.vue'
 
 <template>
   <header>
-    <img alt="Enoch logo" class="logo" src="@/assets/logo.svg" height="150" />
-
+    <RouterLink to="/">
+      <img alt="Enoch logo" class="logo" src="@/assets/logo.svg" height="150" />
+    </RouterLink>
     <div class="wrapper">
       <Hello msg="Welcome to Enoch's Workshop" />
 
