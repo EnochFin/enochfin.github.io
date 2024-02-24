@@ -34,5 +34,9 @@ h3 {
   .greetings h3 {
     text-align: left;
   }
+
+  h1 {
+    margin-top: 20px;
+  }
 }
 </style>
