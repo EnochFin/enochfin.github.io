@@ -15,9 +15,9 @@ const router = createRouter({
       component: () => import("../views/ArtView.vue"),
     },
     {
-      path: "/codingtrain",
-      name: "codingtrain",
-      component: () => import("../views/CodingTrainView.vue"),
+      path: "/maze",
+      name: "maze",
+      component: () => import("../views/MazeView.vue"),
     },
     {
       path: "/about",

@@ -13,12 +13,12 @@ import WelcomeItem from '../components/WelcomeItem.vue'
     </WelcomeItem>
     <WelcomeItem>
       <template #icon>
-        <font-awesome-icon icon="fa-solid fa-train" />
+        <font-awesome-icon icon="fa-solid fa-map" />
       </template>
       <template #heading>
-        <RouterLink to="/codingtrain">Coding Train</RouterLink>
+        <RouterLink to="/maze">Maze</RouterLink>
       </template>
-      This is a collection of Coding Train challenges that I've worked through.
+      This is a collection of Maze Train challenges that I've worked through.
     </WelcomeItem>
     <WelcomeItem>
       <template #icon>
@@ -27,7 +27,7 @@ import WelcomeItem from '../components/WelcomeItem.vue'
       <template #heading>
         <RouterLink to="/art">Art</RouterLink>
       </template>
-      This is a collection of Coding Train challenges that I've worked through.
+      This is a collection of some Art I've made.
     </WelcomeItem>
   </div>
 </template>

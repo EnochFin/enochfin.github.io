@@ -1,5 +1,6 @@
 import { createApp } from "vue";
 import { createPinia } from "pinia";
+import VueKonva from "vue-konva";
 
 /* import the fontawesome core */
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -12,7 +13,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faEnvelope,
-  faTrain,
+  faMap,
   faCube,
   faCamera,
 } from "@fortawesome/free-solid-svg-icons";
@@ -26,7 +27,7 @@ library.add(faLinkedin);
 library.add(faGithub);
 library.add(faDiscord);
 library.add(faEnvelope);
-library.add(faTrain);
+library.add(faMap);
 library.add(faCamera);
 library.add(faCube);
 library.add(faInstagram);
@@ -35,5 +36,6 @@ const app = createApp(App).component("font-awesome-icon", FontAwesomeIcon);
 
 app.use(createPinia());
 app.use(router);
+app.use(VueKonva);
 
 app.mount("#app");

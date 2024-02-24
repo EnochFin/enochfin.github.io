@@ -20,8 +20,10 @@
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/vue-fontawesome": "^3.0.2",
     "execa": "^6.1.0",
+    "konva": "^9.3.3",
     "pinia": "^2.0.26",
     "vue": "^3.2.45",
+    "vue-konva": "^3.0.2",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {

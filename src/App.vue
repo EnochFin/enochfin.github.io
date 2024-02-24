@@ -15,6 +15,7 @@ import Hello from './components/Hello.vue'
       <nav>
         <RouterLink to="/">Projects</RouterLink>
         <RouterLink to="/art">Art</RouterLink>
+        <RouterLink to="/maze">Maze</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
 

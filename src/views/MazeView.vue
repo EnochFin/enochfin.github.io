@@ -1,5 +1,5 @@
 <template>
-    <div class="coding-train">
+    <div class="maze">
         Not Deployed yet.
     </div>
 </template>
