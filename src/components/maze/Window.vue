@@ -8,29 +8,18 @@
     </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
+import { defineComponent, ref } from 'vue';
 import Maze from './Maze.vue';
-export default {
-    components: { Maze },
-    props: ['width', 'height'],
-    data() {
-        return {
-            configKonva: {
-                width: this.width,
-                height: this.height
-            },
-            configCircle: {
-                x: 100,
-                y: 100,
-                radius: 70,
-                fill: "red",
-                stroke: "black",
-                strokeWidth: 4
-            }
-        };
-    }
-};
 
+defineComponent(Maze);
+const props = defineProps(['width', 'height']);
+
+const configKonva = ref({
+    width: props.width,
+    height: props.height
+});
+console.log(configKonva.value);
 </script>
 
 <style>

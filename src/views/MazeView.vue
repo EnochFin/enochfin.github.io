@@ -1,20 +1,13 @@
 <template>
     <div class="maze-view" data-id="maze-view">
-        <Window></Window>
+        <Window v-bind="win_size"></Window>
     </div>
 </template>
 
-<script lang="ts">
-import Window from 'components/maze/Window.vue';
+<script setup lang="ts">
+import Window from '../components/maze/Window.vue';
 
-
-export default {
-    data() {
-        return {
-        };
-    }
-};
-
+const win_size = { width: 200, height: 200 }
 </script>
 
 <style>
