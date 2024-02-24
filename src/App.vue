@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import type Hello from './components/Hello.vue';
+import Hello from './components/Hello.vue';
 
 </script>
 

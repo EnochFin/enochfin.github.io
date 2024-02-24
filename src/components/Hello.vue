@@ -10,7 +10,6 @@
 
 <script setup lang="ts">
 const props = defineProps(['msg'])
-console.log(props.msg)
 </script>
 
 <style scoped >
