@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import Hello from './components/Hello.vue'
+import type Hello from './components/Hello.vue';
 
 </script>
 
@@ -9,7 +9,7 @@ import Hello from './components/Hello.vue'
     <RouterLink to="/">
       <img alt="Enoch logo" class="logo" src="@/assets/logo.svg" height="150" />
     </RouterLink>
-    <div class="wrapper">
+    <div class="wrapper" data-id="app-wrapper">
       <Hello msg="Welcome to Enoch's Workshop" />
 
       <nav>

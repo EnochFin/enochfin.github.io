@@ -1,11 +1,5 @@
-<script setup lang="ts">
-defineProps<{
-  msg: string
-}>()
-</script>
-
 <template>
-  <div class="greetings">
+  <div class="greetings" data-id="hello-component">
     <h1>{{ msg }}</h1>
     <h3>
       You can find the source <a href="https://github.com/EnochFin/enochfin.github.io" target="_blank"
@@ -14,7 +8,12 @@ defineProps<{
   </div>
 </template>
 
-<style scoped>
+<script setup lang="ts">
+const props = defineProps(['msg'])
+console.log(props.msg)
+</script>
+
+<style scoped >
 h1 {
   font-weight: 500;
   font-size: 2.6rem;
@@ -30,7 +29,7 @@ h3 {
   text-align: center;
 }
 
-@media (min-width: 1024px) {
+@media(min-width: 1024px) {
 
   .greetings h1,
   .greetings h3 {
