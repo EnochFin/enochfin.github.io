@@ -1,46 +1,62 @@
 <template>
-    <v-line v-if="top" ref="cell" :config="topLineConfig"></v-line>
-    <v-line v-if="bottom" ref="cell" :config="bottomLineConfig"></v-line>
-    <v-line v-if="right" ref="cell" :config="rightLineConfig"></v-line>
-    <v-line v-if="left" ref="cell" :config="leftLineConfig"></v-line>
+    <v-line v-if="left" :config="leftLineConfig"></v-line>
+    <v-line v-if="right" :config="rightLineConfig"></v-line>
+    <v-line v-if="bottom" :config="bottomLineConfig"></v-line>
+    <v-line v-if="top" :config="topLineConfig"></v-line>
+    <v-circle :config="visitedConfig"></v-circle>
 </template>
 
 <script setup lang="ts">
 import { ref } from "vue";
 
-const left = ref(true);
-const right = ref(true);
-const top = ref(true);
-const bottom = ref(true);
 
-const props = defineProps(['id', 'x', 'y']);
+const props = defineProps(['id', 'x', 'y', 'visited', 'walls']);
 
+const visited = props.visited;
+const walls = props.walls;
+const padding = 10;
 const scale = 20
-const x1 = props.x * scale;
-const y1 = props.y * scale;
+const x1 = padding + (props.x * scale);
+const y1 = padding + (props.y * scale);
 const x2 = x1 + scale;
 const y2 = y1 + scale;
 
-const topLineConfig = {
+// lrtb
+const left = (walls & 1) == 1;
+const right = (walls & 2) == 2;
+const top = (walls & 4) == 4;
+const bottom = (walls & 8) == 8;
+
+const wallColor = 'black';
+
+const leftLineConfig = {
     points: [x1, y1, x2, y1],
-    stroke: 'green',
-    strokeWidth: 2,
-};
-const bottomLineConfig = {
-    points: [x1, y2, x2, y2],
-    stroke: 'green',
+    stroke: wallColor,
     strokeWidth: 2,
 };
 const rightLineConfig = {
+    points: [x1, y2, x2, y2],
+    stroke: wallColor,
+    strokeWidth: 2,
+};
+const bottomLineConfig = {
     points: [x2, y1, x2, y2],
-    stroke: 'green',
+    stroke: wallColor,
     strokeWidth: 2,
 };
-const leftLineConfig = {
+const topLineConfig = {
     points: [x1, y1, x1, y2],
-    stroke: 'green',
+    stroke: wallColor,
     strokeWidth: 2,
 };
+const visitedConfig = {
+    x: x1 + (x2 - x1) * .7,
+    y: y1 + (y2 - y1) * .3,
+    radius: 3,
+    fill: visited ? 'green' : 'red',
+    stroke: wallColor,
+    strokeWidth: 2,
+}
 
 </script>
   
