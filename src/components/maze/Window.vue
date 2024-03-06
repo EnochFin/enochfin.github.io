@@ -20,7 +20,6 @@ import Cell from './Cell.vue';
 
 const win = ref();
 
-defineComponent(Maze);
 const props = defineProps(['width', 'height']);
 const winWidth = props.width;
 const winHeight = props.height;
@@ -52,23 +51,27 @@ const textConfig = ref({
     y: 300,
 });
 
-const handleInit = (e) => {
+const handleInit = () => {
     const nextTextConfig = textConfig.value;
     nextTextConfig.text = 'initializing!';
     textConfig.value = nextTextConfig;
     breakWalls();
 }
 
-const getIndex = (i, j) => i * size + j;
-const randomIndex = (arr) => Math.floor(Math.random() * arr.length);
+const sleep = async () => {
+    await new Promise(r => setTimeout(r, 500));
+}
 
-const setVisited = (i, visited) => {
+const getIndex = (i: number, j: number) => i * size + j;
+const randomIndex = (arr: any[]) => Math.floor(Math.random() * arr.length);
+
+const setVisited = (i: number, visited: boolean) => {
     let modCells = cells.value;
     modCells[i].visited = visited;
     modCells[i].id = modCells[i].id + num;
 }
 
-const getNeedVisit = (i, j, visited) => {
+const getNeedVisit = (i: number, j: number, visited: boolean) => {
     let needVisit = Array();
     // check left
     if (i > 0) {
@@ -101,14 +104,14 @@ const getNeedVisit = (i, j, visited) => {
     return needVisit
 };
 
-const breakWall = (i, j, toI, toJ) => {
+const breakWall = (i: number, j: number, toI: number, toJ: number) => {
     const curr = cells.value[getIndex(i, j)];
     const to = cells.value[getIndex(toI, toJ)];
     // lrtb
-    const clearLeft = (v) => v & 14;    // 0111
-    const clearRight = (v) => v & 13;   // 1011
-    const clearTop = (v) => v & 11;     // 1101
-    const clearBottom = (v) => v & 7;   // 1110
+    const clearLeft = (v: number) => v & 14;    // 0111
+    const clearRight = (v: number) => v & 13;   // 1011
+    const clearTop = (v: number) => v & 11;     // 1101
+    const clearBottom = (v: number) => v & 7;   // 1110
     if (toI < i) {
         // left
         curr.walls = clearLeft(curr.walls);
@@ -155,7 +158,7 @@ const breakWalls = () => {
     console.log(cells.value);
 };
 
-const breakWallsR = (i, j) => {
+const breakWallsR = (i: number, j: number) => {
     setVisited(getIndex(i, j), true);
     while (true) {
         let needVisit = getNeedVisit(i, j, false);

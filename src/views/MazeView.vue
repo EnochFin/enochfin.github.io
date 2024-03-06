@@ -16,9 +16,10 @@ const size = ref({ width: 500, height: 500 });
 
 <style>
 .maze-view {
-    align-items: center;
-    height: 100%;
-    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 </style>
   
