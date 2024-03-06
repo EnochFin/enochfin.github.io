@@ -39,7 +39,7 @@ const cellRight = (v: number) => v & 13;   // 1011
 const cellTop = (v: number) => v & 11;     // 1101
 const cellBottom = (v: number) => v & 7;   // 1110
 
-const cells = ref([]);
+const cells = ref(Array());
 
 const setupCells = () => {
     let cellsInit = Array(num);
