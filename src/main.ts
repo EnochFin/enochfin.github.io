@@ -16,6 +16,7 @@ import {
   faMap,
   faCube,
   faCamera,
+  faGamepad,
 } from "@fortawesome/free-solid-svg-icons";
 
 import App from "./App.vue";
@@ -31,6 +32,7 @@ library.add(faMap);
 library.add(faCamera);
 library.add(faCube);
 library.add(faInstagram);
+library.add(faGamepad);
 
 const app = createApp(App).component("font-awesome-icon", FontAwesomeIcon);
 

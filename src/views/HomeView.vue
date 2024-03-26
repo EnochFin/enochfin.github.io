@@ -29,6 +29,15 @@ import WelcomeItem from '../components/WelcomeItem.vue'
       </template>
       This is a collection of some Art I've made.
     </WelcomeItem>
+    <WelcomeItem>
+      <template #icon>
+        <font-awesome-icon icon="fa-solid fa-gamepad" />
+      </template>
+      <template #heading>
+        <RouterLink to="/game">Game</RouterLink>
+      </template>
+      This is a very rough unity game I made.
+    </WelcomeItem>
   </div>
 </template>
 
