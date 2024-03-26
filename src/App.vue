@@ -17,6 +17,7 @@ import Hello from './components/Hello.vue';
         <RouterLink to="/art">Art</RouterLink>
         <RouterLink to="/maze">Maze</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/game">Game</RouterLink>
       </nav>
 
       <div id="socials">
