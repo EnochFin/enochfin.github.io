@@ -12,6 +12,7 @@
     }
   ],
   "compilerOptions": {
-    "baseUrl": "src"
+    "baseUrl": "src",
+    "allowJs": true,
   },
 }

@@ -11,7 +11,7 @@
     </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { onMounted, ref } from 'vue';
 
 const val = ref('<h1>asdf</h1>');
